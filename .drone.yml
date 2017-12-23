@@ -1,7 +1,9 @@
 pipeline:
   build:
-   image: redis
-   commands:
-    - echo "minimum viable product"
-  when:
-    event: push
+    image: redis
+    commands:
+      - env
+      - echo "Hurray...Success !!!"
+      - echo "why does it work here and not in the other repo"
+    when:
+     event: push
