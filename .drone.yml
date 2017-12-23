@@ -1,5 +1,7 @@
 pipeline:
-  commands:
+  build:
+   image:redis
+   commands:
     - echo "minimum viable product"
   when:
     event: push
